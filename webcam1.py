@@ -2,7 +2,7 @@ from flask import Flask, g, make_response, Response, request
 import cv2
 
 app = Flask(__name__)
-video = cv2.VideoCapture(-1)
+video = cv2.VideoCapture(0)
 @app.route('/')
 def index():
     return "Hello SITL This is video example"
